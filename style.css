@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Menu */
+#menu {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+}
+
+#menu h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px cyan;
+}
+
+#playButton {
+    background: linear-gradient(to right, cyan, blue);
+    border: none;
+    padding: 15px 40px;
+    font-size: 24px;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px cyan;
+}
+
+#playButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px cyan;
+}
+
+/* Game container */
+#gameContainer {
+    position: relative;
+    display: inline-block;
+}
+
+/* Canvas */
+#gameCanvas {
+    background: black;
+    border: 2px solid white;
+    display: block;
+}
+
+/* Health bar */
+#healthBarContainer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 20px;
+    border: 2px solid white;
+    background-color: red;
+}
+#healthBar {
+    height: 100%;
+    background-color: limegreen;
+}
+
+/* Wave counter */
+#waveCounter {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    font-size: 20px;
+}
